@@ -1,17 +1,17 @@
 Config = Config or {}
 
-Config.UseTarget = GetConvar('UseTarget', 'false') == 'true' -- Use qb-target interactions (don't change this, go to your server.cfg and add `setr UseTarget true` to use this and just that from true to false or the other way around)
+Config.UseTarget = true -- Use qb-target interactions (don't change this, go to your server.cfg and add `setr UseTarget true` to use this and just that from true to false or the other way around)
 
 Config.ItemTiers = 1
 
-Config.MinimumPaletoPolice = 4
-Config.MinimumPacificPolice = 5
-Config.MinimumFleecaPolice = 3
-Config.MinimumThermitePolice = 2
-Config.OutlawCooldown = 5 -- The amount of minutes it takes for the cops to be able to be called again after they were called
+Config.MinimumPaletoPolice = 0
+Config.MinimumPacificPolice = 0
+Config.MinimumFleecaPolice = 0
+Config.MinimumThermitePolice = 0
+Config.OutlawCooldown = 15 -- The amount of minutes it takes for the cops to be able to be called again after they were called
 
-Config.HitsNeeded = 13 -- The amount of powerstation needed to be hit to cause a blackout
-Config.BlackoutTimer = 10 -- The amount of minutes a blackout will take until all power comes back
+Config.HitsNeeded = 1 -- The amount of powerstation needed to be hit to cause a blackout
+Config.BlackoutTimer = 1 -- The amount of minutes a blackout will take until all power comes back
 
 Config.RewardTypes = {
     [1] = {
@@ -24,7 +24,7 @@ Config.RewardTypes = {
 
 Config.LockerRewards = {
     ["tier1"] = {
-        [1] = {item = "goldchain", minAmount = 5, maxAmount = 15},
+        [1] = {item = "goldchain", minAmount = 10, maxAmount = 15},
     },
     ["tier2"] = {
         [1] = {item = "rolex", minAmount = 5, maxAmount = 15},
@@ -505,23 +505,23 @@ Config.BigBanks = {
     ["pacific"] = {
         ["label"] = "Pacific Standard",
         ["coords"] = {
-            [1] = vector3(261.95, 223.11, 106.28),
-            [2] = vector3(253.25, 228.44, 101.68)
+            [1] = vector3(272.07, 220.77, 97.12),
+            [2] = vector3(269.31, 212.4, 97.12)
         },
         ["alarm"] = true,
-        ["object"] = 961976194,
+        ["object"] = 409280169,
         ["heading"] = {
-            closed = 160.00001,
-            open = 70.00001
+            closed = 70.00,
+            open = 303.00
         },
         ["thermite"] = {
             [1] = {
-                ["coords"] = vector3(252.55, 221.15, 101.68),
+                ["coords"] = vector3(244.16, 217.97, 97.12),
                 ["isOpened"] = false,
                 ["doorId"] = 2
             },
             [2] = {
-                ["coords"] = vector3(261.15, 215.21, 101.68),
+                ["coords"] = vector3(249.63, 232.9, 97.12),
                 ["isOpened"] = false,
                 ["doorId"] = 3
             }
@@ -530,55 +530,55 @@ Config.BigBanks = {
         ["isOpened"] = false,
         ["lockers"] = {
             [1] = {
-                ["coords"] = vector3(258.57, 218.36, 101.68),
+                ["coords"] = vector3(244.84, 213.87, 97.12),
                 ["isBusy"] = false,
                 ["isOpened"] = false
             },
             [2] = {
-                ["coords"] = vector3(260.82, 217.62, 101.68),
+                ["coords"] = vector3(243.88, 211.89, 97.12),
                 ["isBusy"] = false,
                 ["isOpened"] = false
             },
             [3] = {
-                ["coords"] = vector3(259.33, 213.76, 101.68),
+                ["coords"] = vector3(241.51, 210.59, 97.12),
                 ["isBusy"] = false,
                 ["isOpened"] = false
             },
             [4] = {
-                ["coords"] = vector3(257.09, 214.55, 101.68),
+                ["coords"] = vector3(240.86, 213.07, 97.12),
                 ["isBusy"] = false,
                 ["isOpened"] = false
             },
             [5] = {
-                ["coords"] = vector3(263.7, 216.48, 101.68),
+                ["coords"] = vector3(241.6, 215.73, 97.12),
                 ["isBusy"] = false,
                 ["isOpened"] = false
             },
             [6] = {
-                ["coords"] = vector3(265.81, 215.81, 101.68),
+                ["coords"] = vector3(249.31, 236.42, 97.12),
                 ["isBusy"] = false,
                 ["isOpened"] = false
             },
             [7] = {
-                ["coords"] = vector3(266.43, 214.37, 101.68),
+                ["coords"] = vector3(250.21, 238.83, 97.12),
                 ["isBusy"] = false,
                 ["isOpened"] = false
             },
             [8] = {
-                ["coords"] = vector3(265.71, 212.49, 101.68),
+                ["coords"] = vector3(252.4, 239.97, 97.12),
                 ["isBusy"] = false,
                 ["isOpened"] = false
             },
             [9] = {
-                ["coords"] = vector3(264.24, 211.92, 101.68),
+                ["coords"] = vector3(253.3, 237.87, 97.12),
                 ["isBusy"] = false,
                 ["isOpened"] = false
             },
             [10] = {
-                ["coords"] = vector3(262.21, 212.67, 101.68),
+                ["coords"] = vector3(252.28, 235.4, 97.12),
                 ["isBusy"] = false,
                 ["isOpened"] = false
             }
         }
-    }
+    },
 }
